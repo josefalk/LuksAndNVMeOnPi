@@ -89,6 +89,11 @@ Cipher mode:    xts-plain64
 Hash spec:      sha256
 ...`
 
+## Permission issue:
 
+If you can't write on the disk, you may need permission to the user or group. The below example if the username is pi and the group is pi.
+You can find the current user `whoami` or `id -u -n` and group `groups` and apply the below command.
+
+`sudo chown pi:pi /mnt/nvme`
 
 
