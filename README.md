@@ -4,7 +4,7 @@ Simple overview of use/purpose.
 
 ## Description
 
-`lsblk
+`lsblk`
 
 cryptsetup luksFormat /dev/nvme0n1p1
 
@@ -16,7 +16,7 @@ mkfs.ext4 /dev/mapper/nvme
 mkdir /mnt/nvme
 mount /dev/mapper/nvme /mnt/nvme
 
-cryptsetup luksDump /dev/nvme0n1p1`
+cryptsetup luksDump /dev/nvme0n1p1
 
 
 
