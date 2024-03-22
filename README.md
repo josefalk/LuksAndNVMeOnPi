@@ -1,6 +1,6 @@
 # Project Title
 
-Simple overview of use/purpose.
+Encrypt Raspberry PI 5 NVMe. PI boot form MicroSD card.
 
 ## Description
 
