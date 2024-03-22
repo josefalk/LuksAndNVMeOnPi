@@ -68,23 +68,7 @@ You can now use /mnt/encrypted_nvme to access the encrypted volume.
 
 Remember, whenever you want to access the data on the encrypted volume, you'll need to open the encrypted volume using `cryptsetup luksOpen` and provide the passphrase you set during encryption.
 
-`lsblk`
-
-cryptsetup luksFormat /dev/nvme0n1p1
-
-cryptsetup luksOpen /dev/nvme0n1p1 nvme
-
-
-mkfs.ext4 /dev/mapper/nvme
-
-mkdir /mnt/nvme
-mount /dev/mapper/nvme /mnt/nvme
-
-cryptsetup luksDump /dev/nvme0n1p1
-
-
 ## Verify:
-
 
 To verify if a partition is encrypted, you can examine its header to see if it contains the LUKS (Linux Unified Key Setup) header. This header is a distinctive marker indicating that the partition is encrypted using LUKS.
 You can use the cryptsetup command with the luksDump option to check if a partition contains a LUKS header. Here's how to do it:
